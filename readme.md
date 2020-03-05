@@ -3,13 +3,16 @@
 A simple YACC & Lex GeoJSON parser to create an .hmtl file to draw shapes from the GeoJSON. 
 You need to add your own Google Maps API key to the template.y file.
 
-'''yacc -d template.y 
+'''bash
+yacc -d template.y 
 '''
 should produce files y.tab.c and y.tab.h, then it is possible to:
-'''#include "y.tab.h"
+'''C
+#include "y.tab.h"
 '''
 and 
-'''lex template.l
+'''bash
+lex template.l
 gcc lex.yy.c y.tab.c 
 ./a.out < fcall.txt
 '''
