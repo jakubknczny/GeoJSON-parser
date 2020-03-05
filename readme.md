@@ -1,4 +1,4 @@
-# GeoJSON Parser
+## GeoJSON Parser
 
 A simple YACC & Lex GeoJSON parser to create an .hmtl file to draw shapes from the GeoJSON. 
 You need to add your own Google Maps API key to the template.y file.
@@ -6,7 +6,7 @@ You need to add your own Google Maps API key to the template.y file.
 '''
 yacc -d template.y 
 '''
-should produce files y.tab.c and y.tab.h, than it is possible to:
+should produce files y.tab.c and y.tab.h, then it is possible to:
 '''
 #include "y.tab.h"
 '''
